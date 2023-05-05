@@ -1,0 +1,16 @@
+@use '../base';
+
+.navbar {
+  @include base.centered($direction: row, $justify: space-between);
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  height: 50px;
+  padding: 0 25px;
+
+  .mobile_menu {
+    @include base.device(tablet) {
+      display: none;
+    }
+  }
+}

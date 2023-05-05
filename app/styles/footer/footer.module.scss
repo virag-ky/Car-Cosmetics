@@ -3,8 +3,8 @@
 .footer {
   position: relative;
   bottom: 0;
-  height: 50px;
-  padding: 0 25px;
+  height: 70px;
+  padding: 10px 25px;
   @include base.centered($direction: row, $justify: space-between);
   @include base.device(tablet) {
     @include base.centered($direction: row, $justify: space-evenly);

@@ -1,5 +1,12 @@
-import './styles/globals.css';
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import './styles/globals.css';
+import { Domine } from 'next/font/google';
+
+const domine = Domine({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+});
 
 export const metadata = {
   title: 'Car Detailing KFT',
@@ -10,7 +17,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={domine.className}>
+        <Navbar />
         {children}
         <Footer />
       </body>
