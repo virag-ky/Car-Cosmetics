@@ -1,0 +1,31 @@
+$primary-color: #929292;
+$secondary-color1: #f8f8f8;
+$secondary-color2: #323232;
+$highlight-color: tomato;
+
+@mixin centered($direction: column, $justify: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: center;
+}
+
+@mixin device($breakpoint) {
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 1440px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media only screen and (min-width: 601px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 600px) {
+      @content;
+    }
+  }
+}
