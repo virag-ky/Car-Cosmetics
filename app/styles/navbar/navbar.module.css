@@ -33,5 +33,27 @@
   height: 100vh;
   width: 100%;
   padding: 12px 0;
-  transition: 0.8s;
+  transition: 0.5s;
+}
+.mobile_menu .menu_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 100px;
+  width: 100%;
+  height: 50vh;
+  padding: 0 25px;
+}
+.mobile_menu .menu_list li {
+  list-style: none;
+  font-weight: 700;
+  font-size: 1rem;
+  width: 100%;
+  padding: 10px 25px;
+  background: gainsboro;
+}
+.mobile_menu .menu_list li a {
+  text-decoration: none;
+  color: #323232;
 }/*# sourceMappingURL=navbar.module.css.map */

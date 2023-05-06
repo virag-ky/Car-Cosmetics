@@ -1,7 +1,9 @@
 @use '../base';
 
 .footer {
-  position: relative;
+  position: fixed;
+  background: #fff;
+  width: 100%;
   bottom: 0;
   height: 70px;
   padding: 10px 25px;
