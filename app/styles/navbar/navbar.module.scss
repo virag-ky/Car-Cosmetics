@@ -9,8 +9,47 @@
 
   .nav_container {
     @include base.centered($direction: row, $justify: space-between);
+    @include base.device(tablet) {
+      padding: 0 25px;
+    }
+    @include base.device(mobile) {
+      padding: 0 25px;
+    }
     width: 100%;
-    padding: 0 25px;
+    padding: 0 50px;
+  }
+
+  .nav_list {
+    @include base.centered($direction: row, $justify: space-between);
+    @include base.device(tablet) {
+      display: none;
+    }
+    @include base.device(mobile) {
+      display: none;
+    }
+    gap: 10px;
+
+    li {
+      list-style: none;
+
+      .divider {
+        width: 3px;
+        height: 18px;
+        background: rgb(189, 189, 189);
+      }
+
+      a {
+        text-decoration: none;
+        color: base.$secondary-color2;
+        padding: 5px 10px;
+        border-radius: 5px;
+
+        &:hover {
+          background: #e9e8e8;
+          color: #000;
+        }
+      }
+    }
   }
 
   .menu_button {
@@ -18,7 +57,7 @@
       cursor: pointer;
     }
 
-    @include base.device(tablet) {
+    @include base.device(desktop) {
       display: none;
     }
   }
@@ -28,8 +67,13 @@
   @include base.centered($direction: column, $justify: flex-start);
   height: 100vh;
   width: 100%;
-  padding: 12px 0;
   transition: 0.5s;
+
+  .nav_container {
+    background: gainsboro;
+    box-shadow: 0 2px 5px grey;
+    padding: 12px 25px;
+  }
 
   .menu_list {
     @include base.centered(
@@ -39,6 +83,7 @@
     );
     margin-top: 100px;
     width: 100%;
+    max-width: 500px;
     height: 50vh;
     padding: 0 25px;
 
@@ -47,12 +92,17 @@
       font-weight: 700;
       font-size: 1rem;
       width: 100%;
-      padding: 10px 25px;
       background: gainsboro;
+      box-shadow: 5px 5px 5px grey;
+      border-radius: 5px;
 
       a {
+        @include base.centered($direction: row, $justify: flex-start);
+        gap: 15px;
+        padding: 10px 25px;
         text-decoration: none;
         color: base.$secondary-color2;
+        width: 100%;
       }
     }
   }

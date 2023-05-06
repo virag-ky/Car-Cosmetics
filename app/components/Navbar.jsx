@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link';
 import clsx from 'clsx';
 import MobileMenu from './MobileMenu';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -19,6 +20,35 @@ const Navbar = () => {
     <nav className={navStyles}>
       <div className={styles.nav_container}>
         <span>Car Detailing KFT</span>
+        <ul className={styles.nav_list}>
+          <li>
+            <Link href="/">Fő oldal</Link>
+          </li>
+          <li>
+            <div className={styles.divider}></div>
+          </li>
+          <li>
+            <Link href="/about">Rólunk</Link>
+          </li>
+          <li>
+            <div className={styles.divider}></div>
+          </li>
+          <li>
+            <Link href="/prices">Árlista</Link>
+          </li>
+          <li>
+            <div className={styles.divider}></div>
+          </li>
+          <li>
+            <Link href="/services">Szolgáltatások</Link>
+          </li>
+          <li>
+            <div className={styles.divider}></div>
+          </li>
+          <li>
+            <Link href="/gallery">Galéria</Link>
+          </li>
+        </ul>
         {open ? (
           <IoClose
             onClick={handleMenu}

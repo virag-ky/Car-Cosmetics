@@ -10,32 +10,32 @@ const MobileMenu = ({ handleMenu }) => {
   return (
     <ul className={styles.menu_list}>
       <li>
-        <ImHome size="1.2rem" />
         <Link onClick={handleMenu} href="/">
+          <ImHome size="1.2rem" />
           Fő oldal
         </Link>
       </li>
       <li>
-        <ImProfile size="1.2rem" />
         <Link onClick={handleMenu} href="/about">
+          <ImProfile size="1.2rem" />
           Rólunk
         </Link>
       </li>
       <li>
-        <MdAttachMoney size="1.3rem" />
         <Link onClick={handleMenu} href="/prices">
+          <MdAttachMoney size="1.3rem" />
           Árlista
         </Link>
       </li>
       <li>
-        <MdMiscellaneousServices size="1.3rem" />
         <Link onClick={handleMenu} href="/services">
+          <MdMiscellaneousServices size="1.3rem" />
           Szolgáltatások
         </Link>
       </li>
       <li>
-        <GrGallery size="1.2rem" />
         <Link onClick={handleMenu} href="/gallery">
+          <GrGallery size="1.2rem" />
           Galéria
         </Link>
       </li>

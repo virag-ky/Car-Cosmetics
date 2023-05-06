@@ -11,9 +11,13 @@
   @include base.device(tablet) {
     @include base.centered($direction: row, $justify: space-evenly);
   }
+  @include base.device(desktop) {
+    padding: 10px 50px;
+  }
 
   span {
-    font-size: 0.9rem;
+    @include base.centered($direction: row, $align: flex-start);
+    font-size: 0.8rem;
     color: base.$secondary-color2;
   }
 
