@@ -1,23 +1,33 @@
 import Link from 'next/link';
 
-const MobileMenu = () => {
+const MobileMenu = ({ handleMenu }) => {
   return (
     <div>
       <ul>
         <li>
-          <Link href="/">Fő oldal</Link>
+          <Link onClick={handleMenu} href="/">
+            Fő oldal
+          </Link>
         </li>
         <li>
-          <Link href="/about">Rólunk</Link>
+          <Link onClick={handleMenu} href="/about">
+            Rólunk
+          </Link>
         </li>
         <li>
-          <Link href="/prices">Árlista</Link>
+          <Link onClick={handleMenu} href="/prices">
+            Árlista
+          </Link>
         </li>
         <li>
-          <Link href="/services">Szolgáltatások</Link>
+          <Link onClick={handleMenu} href="/services">
+            Szolgáltatások
+          </Link>
         </li>
         <li>
-          <Link href="/gallery">Galéria</Link>
+          <Link onClick={handleMenu} href="/gallery">
+            Galéria
+          </Link>
         </li>
       </ul>
     </div>

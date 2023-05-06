@@ -33,7 +33,7 @@ const Navbar = () => {
           />
         )}
       </div>
-      {open && <MobileMenu />}
+      {open && <MobileMenu handleMenu={handleMenu} />}
     </nav>
   );
 };
