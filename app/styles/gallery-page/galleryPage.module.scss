@@ -1,0 +1,7 @@
+@use '../base';
+
+.main {
+  padding-top: 100px;
+  background: base.$primary-color;
+  height: 100vh;
+}
