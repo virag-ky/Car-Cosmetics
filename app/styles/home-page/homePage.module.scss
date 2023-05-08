@@ -1,7 +1,32 @@
 @use '../base';
 
 .main {
-  padding-top: 100px;
-  background: base.$primary-color;
+  padding-top: 50px;
   height: 100vh;
+
+  .header {
+    @include base.centered($justify: flex-start);
+    background: gainsboro;
+    height: 100vh;
+
+    .logo_container {
+      @include base.centered;
+      width: 90%;
+      height: 300px;
+
+      .image {
+        width: 70%;
+        height: 50%;
+        position: relative;
+
+        img {
+          object-fit: contain;
+        }
+      }
+      #text_logo {
+        width: 70%;
+        margin-top: -90px;
+      }
+    }
+  }
 }

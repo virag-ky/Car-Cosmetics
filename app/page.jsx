@@ -1,9 +1,12 @@
+import Logo from './components/Logo';
 import styles from './styles/home-page/homePage.module.css';
 
 const HomePage = () => {
   return (
     <main className={styles.main}>
-      <h1>Home</h1>
+      <header className={styles.header}>
+        <Logo styles={styles} />
+      </header>
     </main>
   );
 };

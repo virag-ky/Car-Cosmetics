@@ -1,8 +1,6 @@
 .footer {
-  position: fixed;
   background: #fff;
   width: 100%;
-  bottom: 0;
   height: 70px;
   padding: 10px 25px;
   display: flex;
@@ -49,6 +47,6 @@
      object-fit: contain;
 }
 .footer .logo_container #text_logo {
-  width: 80%;
+  width: 88%;
   margin-top: -10px;
 }/*# sourceMappingURL=footer.module.css.map */
