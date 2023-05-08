@@ -68,7 +68,6 @@
   height: 100vh;
   width: 100%;
   z-index: 99;
-  transition: 0.5s;
 
   .nav_container {
     background: gainsboro;
@@ -76,34 +75,58 @@
     padding: 12px 25px;
   }
 
-  .menu_list {
-    @include base.centered(
-      $direction: column,
-      $justify: space-evenly,
-      $align: flex-start
-    );
-    margin-top: 100px;
+  .menu_container {
     width: 100%;
-    max-width: 500px;
-    height: 50vh;
-    padding: 0 25px;
+    height: 100vh;
 
-    li {
-      list-style: none;
-      font-weight: 700;
-      font-size: 1rem;
+    .menu_list {
+      @include base.centered(
+        $direction: column,
+        $justify: space-evenly,
+        $align: flex-start
+      );
+      margin: 100px 0 30px 0;
       width: 100%;
-      background: gainsboro;
-      box-shadow: 5px 5px 5px grey;
-      border-radius: 5px;
+      height: 50vh;
+      max-width: 500px;
+      padding: 0 25px;
 
-      a {
-        @include base.centered($direction: row, $justify: flex-start);
-        gap: 15px;
-        padding: 10px 25px;
-        text-decoration: none;
-        color: base.$secondary-color2;
+      li {
+        list-style: none;
+        font-weight: 700;
+        font-size: 1rem;
         width: 100%;
+        background: gainsboro;
+        box-shadow: 5px 5px 5px grey;
+        border-radius: 5px;
+
+        a {
+          @include base.centered($direction: row, $justify: flex-start);
+          gap: 15px;
+          padding: 10px 25px;
+          text-decoration: none;
+          color: base.$secondary-color2;
+          width: 100%;
+        }
+      }
+    }
+    .logo_container {
+      @include base.centered;
+      width: 100%;
+      height: 100px;
+
+      .image {
+        width: 100%;
+        height: 60%;
+        position: relative;
+
+        img {
+          object-fit: contain;
+        }
+      }
+      #text_logo {
+        width: 38%;
+        margin-top: -22px;
       }
     }
   }
