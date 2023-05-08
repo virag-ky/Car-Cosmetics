@@ -2,17 +2,46 @@
 
 .main {
   padding-top: 50px;
-  height: 100vh;
 
   .header {
     @include base.centered($justify: flex-start);
-    background: gainsboro;
-    height: 100vh;
+    background: base.$primary-color;
+    height: 60vh;
+    min-height: 500px;
+    padding-top: 100px;
+
+    h1 {
+      color: #fff;
+    }
+
+    .button {
+      background: base.$secondary-color2;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      padding: 12px 15px;
+      width: 150px;
+      margin-top: 80px;
+      font-family: base.$button-font;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      text-align: center;
+
+      &:hover {
+        cursor: pointer;
+        background: gainsboro;
+        color: base.$secondary-color2;
+      }
+    }
 
     .logo_container {
       @include base.centered;
-      width: 90%;
-      height: 300px;
+      width: 60%;
+      height: 90px;
+      margin-top: 5px;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 5px 5px base.$secondary-color2;
 
       .image {
         width: 70%;
@@ -24,8 +53,26 @@
         }
       }
       #text_logo {
-        width: 70%;
-        margin-top: -90px;
+        width: 50%;
+        margin-top: -20px;
+      }
+    }
+  }
+
+  .intro_section {
+    background: gainsboro;
+
+    .keywords_container {
+      @include base.centered($direction: row, $justify: space-evenly);
+      position: relative;
+      top: -75px;
+
+      .keyword {
+        @include base.centered;
+        background: #fff;
+        box-shadow: 0 5px 5px #b5b5b5;
+        height: 150px;
+        width: 28%;
       }
     }
   }
