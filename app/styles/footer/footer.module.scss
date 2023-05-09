@@ -6,9 +6,6 @@
   height: 70px;
   padding: 10px 25px;
   @include base.centered($direction: row, $justify: space-between);
-  @include base.device(tablet) {
-    @include base.centered($direction: row, $justify: space-evenly);
-  }
   @include base.device(desktop) {
     padding: 10px 50px;
   }
@@ -17,6 +14,10 @@
     @include base.centered($direction: row, $align: flex-start);
     font-size: 0.8rem;
     color: base.$secondary-color2;
+
+    @include base.device(desktop) {
+      font-size: 1rem;
+    }
   }
 
   .logo_container {

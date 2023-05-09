@@ -4,14 +4,40 @@
   padding-top: 50px;
 
   .header {
-    @include base.centered($justify: flex-start);
+    @include base.centered;
     background: base.$primary-color;
     height: 60vh;
     min-height: 500px;
-    padding-top: 100px;
+
+    @include base.device(desktop) {
+      height: 85vh;
+    }
+
+    h1,
+    h2 {
+      color: #fff;
+    }
 
     h1 {
-      color: #fff;
+      @include base.device(tablet) {
+        font-size: 3rem;
+      }
+
+      @include base.device(desktop) {
+        font-size: 4rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.8rem;
+
+      @include base.device(tablet) {
+        font-size: 2.5rem;
+      }
+
+      @include base.device(desktop) {
+        font-size: 3rem;
+      }
     }
 
     .button {
@@ -28,6 +54,11 @@
       text-decoration: none;
       text-align: center;
 
+      @include base.device(desktop) {
+        font-size: 1.2rem;
+        border-radius: 25px;
+      }
+
       &:hover {
         cursor: pointer;
         background: gainsboro;
@@ -38,15 +69,27 @@
     .logo_container {
       @include base.centered;
       width: 60%;
+      max-width: 250px;
       height: 90px;
       margin-top: 5px;
       background: rgba(255, 255, 255, 0.7);
       box-shadow: 0 5px 5px base.$secondary-color2;
 
+      @include base.device(desktop) {
+        max-width: unset;
+        width: 400px;
+        height: 120px;
+      }
+
       .image {
         width: 70%;
         height: 50%;
         position: relative;
+
+        @include base.device(desktop) {
+          width: 100%;
+          height: 80%;
+        }
 
         img {
           object-fit: contain;
@@ -55,6 +98,11 @@
       #text_logo {
         width: 50%;
         margin-top: -20px;
+
+        @include base.device(desktop) {
+          width: 45%;
+          margin-top: -30px;
+        }
       }
     }
   }
@@ -62,17 +110,61 @@
   .intro_section {
     background: gainsboro;
 
+    @include base.device(desktop) {
+      padding: 0 50px;
+    }
+
     .keywords_container {
       @include base.centered($direction: row, $justify: space-evenly);
       position: relative;
-      top: -75px;
+      top: -60px;
+
+      @include base.device(tablet) {
+        top: -80px;
+      }
+
+      @include base.device(desktop) {
+        @include base.centered($direction: row, $justify: center);
+        gap: 100px;
+        top: -110px;
+      }
 
       .keyword {
         @include base.centered;
+        gap: 10px;
+        color: base.$secondary-color2;
         background: #fff;
         box-shadow: 0 5px 5px #b5b5b5;
-        height: 150px;
-        width: 28%;
+        height: 120px;
+        width: 30%;
+        max-width: 200px;
+
+        @include base.device(tablet) {
+          height: 180px;
+        }
+
+        @include base.device(desktop) {
+          height: 220px;
+          width: 220px;
+          max-width: unset;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .main_image_container {
+      width: 100%;
+      height: 40vh;
+      position: relative;
+
+      @include base.device(desktop) {
+        height: 100vh;
+        width: 50%;
+      }
+
+      img {
+        object-fit: contain;
+        object-position: bottom;
       }
     }
   }
