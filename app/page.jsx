@@ -11,7 +11,7 @@ const HomePage = () => {
       <header className={styles.header}>
         <div className={styles.title}>
           <h1>Pro Polír</h1>
-          <h2>Auto Kozmetika</h2>
+          <h2>Autó Kozmetika</h2>
         </div>
         <Logo styles={styles} />
         <Link role="button" className={styles.button} href="/about">

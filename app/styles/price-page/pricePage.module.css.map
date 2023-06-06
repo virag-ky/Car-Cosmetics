@@ -1,1 +1,1 @@
-{"version":3,"sources":["pricePage.module.scss","../_base.scss","pricePage.module.css"],"names":[],"mappings":"AAEA;EACE,kBAAA;EACA,mBCJc;EDKd,aAAA;AEDF","file":"pricePage.module.css"}
+{"version":3,"sources":["../_base.scss","pricePage.module.scss","pricePage.module.css"],"names":[],"mappings":"AAAQ,8FAAA;ACER;EACE,kBAAA;EACA,mBDFc;ECGd,aAAA;ACAF","file":"pricePage.module.css"}

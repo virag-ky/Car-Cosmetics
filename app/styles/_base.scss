@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
 $primary-color: #929292;
 $secondary-color1: #f8f8f8;
 $secondary-color2: #555555;
 $highlight-color: tomato;
+$headings_font: 'DM Serif Display', serif;
 $button-font: 'Times New Roman', Times, serif;
 
 @mixin centered($direction: column, $justify: center, $align: center) {

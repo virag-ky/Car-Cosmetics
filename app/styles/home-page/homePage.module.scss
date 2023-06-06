@@ -19,14 +19,16 @@
 
     .title {
       @include base.centered;
-      backdrop-filter: blur(6px);
+      backdrop-filter: blur(10px);
+      //background: #000;
       padding: 20px;
       border-radius: 15px;
-      border: 2px solid gainsboro;
+      border: 3px solid gainsboro;
 
       h1,
       h2 {
         color: #fff;
+        font-family: base.$headings_font;
       }
   
       h1 {

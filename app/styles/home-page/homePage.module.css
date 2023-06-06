@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 .main {
   padding-top: 50px;
 }
@@ -23,15 +24,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   padding: 20px;
   border-radius: 15px;
-  border: 2px solid gainsboro;
+  border: 3px solid gainsboro;
 }
 .main .header .title h1,
 .main .header .title h2 {
   color: #fff;
+  font-family: "DM Serif Display", serif;
 }
 @media only screen and (min-width: 601px) and (max-width: 920px) {
   .main .header .title h1 {

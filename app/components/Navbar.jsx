@@ -1,11 +1,11 @@
-'use client';
-import { useState } from 'react';
-import Link from 'next/link';
-import clsx from 'clsx';
-import MobileMenu from './MobileMenu';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { IoClose } from 'react-icons/io5';
-import styles from '../styles/navbar/navbar.module.css';
+"use client";
+import { useState } from "react";
+import Link from "next/link";
+import clsx from "clsx";
+import MobileMenu from "./MobileMenu";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
+import styles from "../styles/navbar/navbar.module.css";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -19,7 +19,10 @@ const Navbar = () => {
   return (
     <nav className={navStyles}>
       <div className={styles.nav_container}>
-        <span>Car Detailing KFT</span>
+        <div className={styles.nav_logo}>
+          <span>Pro Polír</span>
+          <span className={styles.sub_logo}>Autó Kozmetika</span>
+        </div>
         <ul className={styles.nav_list}>
           <li>
             <Link href="/">Fő oldal</Link>
