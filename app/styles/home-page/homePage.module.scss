@@ -5,44 +5,57 @@
 
   .header {
     @include base.centered;
-    background: base.$primary-color;
-    height: 60vh;
-    min-height: 500px;
+    //background: base.$primary-color;
+    background: url('/images/carbon_fiber.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 800px;
 
     @include base.device(desktop) {
       height: 85vh;
     }
 
-    h1,
-    h2 {
-      color: #fff;
-    }
+    .title {
+      @include base.centered;
+      backdrop-filter: blur(6px);
+      padding: 20px;
+      border-radius: 15px;
+      border: 2px solid gainsboro;
 
-    h1 {
-      @include base.device(tablet) {
-        font-size: 3rem;
+      h1,
+      h2 {
+        color: #fff;
       }
-
-      @include base.device(desktop) {
-        font-size: 4rem;
+  
+      h1 {
+        @include base.device(tablet) {
+          font-size: 3rem;
+        }
+  
+        @include base.device(desktop) {
+          font-size: 4rem;
+        }
       }
-    }
-
-    h2 {
-      font-size: 1.8rem;
-
-      @include base.device(tablet) {
-        font-size: 2.5rem;
+  
+      h2 {
+        font-size: 1.8rem;
+  
+        @include base.device(tablet) {
+          font-size: 2.5rem;
+        }
+  
+        @include base.device(desktop) {
+          font-size: 3rem;
+        }
       }
-
-      @include base.device(desktop) {
-        font-size: 3rem;
-      }
-    }
+    }   
 
     .button {
-      background: base.$secondary-color2;
-      color: #fff;
+      //background: base.$secondary-color2;
+      background: #fff;
+      color: base.$secondary-color2;
       border: none;
       border-radius: 20px;
       padding: 12px 15px;
@@ -50,7 +63,7 @@
       margin-top: 80px;
       font-family: base.$button-font;
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 1.2rem;
       text-decoration: none;
       text-align: center;
 
@@ -61,19 +74,21 @@
 
       &:hover {
         cursor: pointer;
-        background: gainsboro;
-        color: base.$secondary-color2;
+        background: #000;
+        outline: 2px solid #fff;
+        color: #fff;
       }
     }
 
     .logo_container {
       @include base.centered;
-      width: 60%;
-      max-width: 250px;
-      height: 90px;
-      margin-top: 5px;
-      background: rgba(255, 255, 255, 0.7);
-      box-shadow: 0 5px 5px base.$secondary-color2;
+      width: 90%;
+      //max-width: 250px;
+      height: 200px;
+      margin-top: 15px;
+      background: rgba(255, 255, 255, 1);
+      border-radius: 15px;
+      //box-shadow: 0 5px 5px base.$secondary-color2;
 
       @include base.device(desktop) {
         max-width: unset;
@@ -82,7 +97,7 @@
       }
 
       .image {
-        width: 70%;
+        width: 100%;
         height: 50%;
         position: relative;
 
@@ -96,8 +111,9 @@
         }
       }
       #text_logo {
-        width: 50%;
-        margin-top: -20px;
+        width: 100%;
+        height: 50px;
+        margin-top: -15px;
 
         @include base.device(desktop) {
           width: 45%;
@@ -117,7 +133,8 @@
     .keywords_container {
       @include base.centered($direction: row, $justify: space-evenly);
       position: relative;
-      top: -60px;
+      //top: -60px;
+      top: 50px;
 
       @include base.device(tablet) {
         top: -80px;
@@ -134,7 +151,11 @@
         gap: 10px;
         color: base.$secondary-color2;
         background: #fff;
-        box-shadow: 0 5px 5px #b5b5b5;
+        box-shadow: 0 5px 10px #6e6e6e;
+        border-top: 10px solid #d70b0b;
+        border-left: 10px solid #d70b0b;
+        border-right: 10px solid base.$secondary-color2;
+        border-bottom: 10px solid base.$secondary-color2;
         height: 120px;
         width: 30%;
         max-width: 200px;
