@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className={styles.nav_container}>
         <div className={styles.nav_logo}>
           <span>Pro Polír</span>
-          <span className={styles.sub_logo}>Autó Kozmetika</span>
+          <span className={styles.sub_logo}>Autókozmetika</span>
         </div>
         <ul className={styles.nav_list}>
           <li>

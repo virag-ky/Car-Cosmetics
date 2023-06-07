@@ -5,7 +5,7 @@
 .main .header {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   background: url("/images/carbon_fiber.jpg");
   background-repeat: no-repeat;
@@ -24,13 +24,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  padding: 20px;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  padding: 30px 20px 50px 20px;
   width: 90%;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 0 5px rgb(129, 129, 129);
+  border-top: 5px solid #d70b0b;
+  border-left: 5px solid #d70b0b;
+  border-right: 5px solid #4b4b4b;
+  border-bottom: 5px solid #4b4b4b;
 }
 .main .header .title h1,
 .main .header .title h2 {
@@ -39,6 +42,10 @@
 }
 .main .header .title h1 {
   font-size: 4rem;
+  background-image: linear-gradient(to right, #da0000, #e04018, #f37d39);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media only screen and (max-width: 360px) {
   .main .header .title h1 {
@@ -73,6 +80,39 @@
     font-size: 3rem;
   }
 }
+.main .header .title .logo_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 200px;
+  margin-top: 15px;
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+@media only screen and (min-width: 921px) {
+  .main .header .title .logo_container {
+    max-width: unset;
+    width: 400px;
+    height: 120px;
+  }
+}
+.main .header .title .logo_container .image {
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+@media only screen and (min-width: 921px) {
+  .main .header .title .logo_container .image {
+    width: 100%;
+    height: 80%;
+  }
+}
+.main .header .title .logo_container .image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .main .header .button {
   background: #fff;
   color: #4b4b4b;
@@ -98,50 +138,6 @@
   background: #000;
   outline: 2px solid #fff;
   color: #fff;
-}
-.main .header .logo_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  height: 200px;
-  margin-top: 15px;
-  background: rgb(255, 255, 255);
-  border-radius: 15px;
-}
-@media only screen and (min-width: 921px) {
-  .main .header .logo_container {
-    max-width: unset;
-    width: 400px;
-    height: 120px;
-  }
-}
-.main .header .logo_container .image {
-  width: 100%;
-  height: 50%;
-  position: relative;
-}
-@media only screen and (min-width: 921px) {
-  .main .header .logo_container .image {
-    width: 100%;
-    height: 80%;
-  }
-}
-.main .header .logo_container .image img {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.main .header .logo_container #text_logo {
-  width: 100%;
-  height: 50px;
-  margin-top: -15px;
-}
-@media only screen and (min-width: 921px) {
-  .main .header .logo_container #text_logo {
-    width: 45%;
-    margin-top: -30px;
-  }
 }
 .main .intro_section {
   display: flex;
@@ -177,10 +173,11 @@
   font-family: Arial, Helvetica, sans-serif;
   background: #fff;
   box-shadow: 5px 10px 10px #757575;
-  border-top: 10px solid #d70b0b;
-  border-left: 10px solid #d70b0b;
-  border-right: 10px solid #4b4b4b;
-  border-bottom: 10px solid #4b4b4b;
+  border-top: 6px solid #d70b0b;
+  border-left: 6px solid #d70b0b;
+  border-right: 6px solid #4b4b4b;
+  border-bottom: 6px solid #4b4b4b;
+  border-radius: 15px;
   height: 180px;
   width: 180px;
 }

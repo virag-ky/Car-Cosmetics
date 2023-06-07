@@ -1,3 +1,6 @@
+"use client";
+
+import { motion, useScroll } from "framer-motion";
 import Link from "next/link";
 import Logo from "./components/Logo";
 import { FaHandshake } from "react-icons/fa";
@@ -11,9 +14,9 @@ const HomePage = () => {
       <header className={styles.header}>
         <div className={styles.title}>
           <h1>Pro Polír</h1>
-          <h2>Autó Kozmetika</h2>
+          <h2>Autókozmetika</h2>
+          <Logo styles={styles} />
         </div>
-        <Logo styles={styles} />
         <Link role="button" className={styles.button} href="/about">
           Rólunk
         </Link>
