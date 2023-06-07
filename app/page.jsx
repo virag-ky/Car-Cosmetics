@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll } from "framer-motion";
+import { Fade } from "react-awesome-reveal";
 import Link from "next/link";
 import Logo from "./components/Logo";
 import { FaHandshake } from "react-icons/fa";
@@ -24,18 +24,21 @@ const HomePage = () => {
       <section className={styles.intro_section}>
         <h3>Mi jellemez minket?</h3>
         <div className={styles.keywords_container}>
-          <div className={styles.keyword}>
-            <FaHandshake size="3rem" color="#555555" />
-            <span>Bizalom</span>
-          </div>
-          <div className={styles.keyword}>
-            <BiBadgeCheck size="3rem" color="#555555" />
-            <span>Minőség</span>
-          </div>
-          <div className={styles.keyword}>
-            <TbTargetArrow size="3rem" color="#555555" />
-            <span>Precizitás</span>
-          </div>
+          <Fade damping={1} direction="left" triggerOnce cascade>
+            <div className={styles.keyword}>
+              <FaHandshake size="3rem" color="#555555" />
+              <span>Bizalom</span>
+            </div>
+
+            <div className={styles.keyword}>
+              <BiBadgeCheck size="3rem" color="#555555" />
+              <span>Minőség</span>
+            </div>
+            <div className={styles.keyword}>
+              <TbTargetArrow size="3rem" color="#555555" />
+              <span>Precizitás</span>
+            </div>
+          </Fade>
         </div>
       </section>
     </main>

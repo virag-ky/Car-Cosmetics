@@ -9,12 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
     "clsx": "^1.2.1",
     "eslint": "8.39.0",
     "eslint-config-next": "^13.4.4",
-    "framer-motion": "^10.12.16",
     "next": "^13.4.4",
     "react": "^18.2.0",
+    "react-awesome-reveal": "^4.2.3",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "sass": "^1.62.1"
