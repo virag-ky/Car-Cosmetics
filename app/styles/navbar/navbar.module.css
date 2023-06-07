@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fugaz+One&family=Racing+Sans+One&display=swap");
 .navbar {
   display: flex;
   flex-direction: column;
@@ -22,9 +22,8 @@
   align-items: center;
   align-items: flex-start;
   font-size: 1.2rem;
-  font-family: "DM Serif Display", serif;
-  font-weight: 700;
-  color: #555555;
+  font-family: "Racing Sans One", cursive;
+  color: #4b4b4b;
 }
 .navbar .nav_logo .sub_logo {
   font-size: 1.1rem;
@@ -80,7 +79,7 @@
 }
 .navbar .nav_list li a {
   text-decoration: none;
-  color: #555555;
+  color: #4b4b4b;
   padding: 5px 10px;
   border-radius: 5px;
 }
@@ -153,7 +152,7 @@
   gap: 15px;
   padding: 15px 25px;
   text-decoration: none;
-  color: #555555;
+  color: #4b4b4b;
   width: 100%;
 }
 .mobile_menu .menu_container .logo_container {

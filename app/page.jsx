@@ -19,6 +19,7 @@ const HomePage = () => {
         </Link>
       </header>
       <section className={styles.intro_section}>
+        <h3>Mi jellemez minket?</h3>
         <div className={styles.keywords_container}>
           <div className={styles.keyword}>
             <FaHandshake size="3rem" color="#555555" />

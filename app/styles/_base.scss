@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fugaz+One&family=Racing+Sans+One&display=swap');
 
-$primary-color: #929292;
+$primary-color: #797979;
 $secondary-color1: #f8f8f8;
-$secondary-color2: #555555;
-$highlight-color: tomato;
-$headings_font: 'DM Serif Display', serif;
-$button-font: 'Times New Roman', Times, serif;
+$secondary-color2: #4b4b4b;
+$headings_font: Arial, Helvetica, sans-serif;
+$title_font: 'Racing Sans One', cursive;
 
 @mixin centered($direction: column, $justify: center, $align: center) {
   display: flex;
@@ -29,6 +28,12 @@ $button-font: 'Times New Roman', Times, serif;
 
   @if $breakpoint == mobile {
     @media only screen and (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == xs {
+    @media only screen and (max-width: 360px) {
       @content;
     }
   }

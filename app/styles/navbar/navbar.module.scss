@@ -16,8 +16,7 @@
     @include base.centered;
     align-items: flex-start;
     font-size: 1.2rem;
-    font-family: base.$headings_font;
-    font-weight: 700;
+    font-family: base.$title_font;
     color: base.$secondary-color2;
 
     .sub_logo {
