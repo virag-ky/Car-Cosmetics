@@ -24,12 +24,11 @@ const HomePage = () => {
       <section className={styles.intro_section}>
         <h3>Mi jellemez minket?</h3>
         <div className={styles.keywords_container}>
-          <Fade damping={1} direction="left" triggerOnce cascade>
+          <Fade damping={0.5} direction="left" triggerOnce cascade>
             <div className={styles.keyword}>
               <FaHandshake size="3rem" color="#555555" />
               <span>Bizalom</span>
             </div>
-
             <div className={styles.keyword}>
               <BiBadgeCheck size="3rem" color="#555555" />
               <span>Minőség</span>
@@ -39,6 +38,30 @@ const HomePage = () => {
               <span>Precizitás</span>
             </div>
           </Fade>
+        </div>
+      </section>
+      <section className={styles.services_section}>
+        <h3>Szolgáltatások</h3>
+        <div>
+          <div className={styles.inner_services}>
+            <h4>Belső Autókozmetika</h4>
+            <ul>
+              <li>Kárpittisztítás</li>
+              <li>Bőrtisztítás és ápolás</li>
+              <li>Gőzfertőtlenítés</li>
+            </ul>
+          </div>
+          <div className={styles.outer_services}>
+            <h4>Külső Autókozmetika</h4>
+            <ul>
+              <li>Prémium külső mosás</li>
+              <li>Felni tisztítás</li>
+              <li>Műanyag és gumi ápolás</li>
+              <li>Fényszóró felújítás</li>
+              <li>Autó polírozás</li>
+              <li>Szélvédő és üveg felületek impregnálása</li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>

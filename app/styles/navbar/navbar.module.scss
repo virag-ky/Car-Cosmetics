@@ -65,10 +65,12 @@
         color: base.$secondary-color2;
         padding: 5px 10px;
         border-radius: 5px;
+        font-weight: 700;
+        transition: .5s;
 
         &:hover {
-          background: #e9e8e8;
-          color: #000;
+          background: base.$secondary-color2;
+          color: #fff;
         }
       }
     }

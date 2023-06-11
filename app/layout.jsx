@@ -1,9 +1,9 @@
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "./styles/globals.css";
-import { Domine } from "next/font/google";
+import { Inter } from "next/font/google";
 
-const domine = Domine({
+const inter = Inter({
   weight: ["400", "700"],
   subsets: ["latin"],
 });
@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={domine.className}>
+      <body className={inter.className}>
         <Navbar />
         {children}
         <Footer />

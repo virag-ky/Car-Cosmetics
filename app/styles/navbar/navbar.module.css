@@ -82,10 +82,12 @@
   color: #4b4b4b;
   padding: 5px 10px;
   border-radius: 5px;
+  font-weight: 700;
+  transition: 0.5s;
 }
 .navbar .nav_list li a:hover {
-  background: #e9e8e8;
-  color: #000;
+  background: #4b4b4b;
+  color: #fff;
 }
 .navbar .menu_button:hover {
   cursor: pointer;
