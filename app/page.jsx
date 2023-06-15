@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <main className={styles.main}>
       <header className={styles.header}>
-        <div className={styles.title}>
+        <div className={styles.title}>  
           <h1>Pro Polír</h1>
           <h2>Autókozmetika</h2>
           <Logo styles={styles} />

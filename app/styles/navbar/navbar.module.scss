@@ -9,7 +9,7 @@
   z-index: 99;
 
   @include base.device(desktop) {
-    height: 60px;
+    height: 70px;
   }
 
   .nav_logo {
@@ -19,9 +19,17 @@
     font-family: base.$title_font;
     color: base.$secondary-color2;
 
+    @include base.device(desktop) {
+      font-size: 1.5rem;
+    }
+
     .sub_logo {
       font-size: 1.1rem;
       margin-top: -5px;
+
+      @include base.device(desktop) {
+        font-size: 1.4rem;
+      }
     }
   }
 
@@ -65,7 +73,7 @@
         color: base.$secondary-color2;
         padding: 5px 10px;
         border-radius: 5px;
-        font-weight: 700;
+        //font-weight: 700;
         transition: .5s;
 
         &:hover {
