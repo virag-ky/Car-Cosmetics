@@ -26,15 +26,15 @@ const HomePage = () => {
         <div className={styles.keywords_container}>
           <Fade damping={0.5} direction="left" triggerOnce cascade>
             <div className={styles.keyword}>
-              <FaHandshake size="3rem" color="#555555" />
+              <FaHandshake size="3rem" color="#fff" />
               <span>Bizalom</span>
             </div>
             <div className={styles.keyword}>
-              <BiBadgeCheck size="3rem" color="#555555" />
+              <BiBadgeCheck size="3rem" color="#fff" />
               <span>Minőség</span>
             </div>
             <div className={styles.keyword}>
-              <TbTargetArrow size="3rem" color="#555555" />
+              <TbTargetArrow size="3rem" color="#fff" />
               <span>Precizitás</span>
             </div>
           </Fade>
