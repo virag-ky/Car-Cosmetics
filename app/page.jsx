@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <main className={styles.main}>
       <header className={styles.header}>
-        <div className={styles.title}>  
+        <div className={styles.title}>
           <h1>Pro Polír</h1>
           <h2>Autókozmetika</h2>
           <Logo styles={styles} />
@@ -22,20 +22,46 @@ const HomePage = () => {
         </Link>
       </header>
       <section className={styles.intro_section}>
-        <h3>Mi jellemez minket?</h3>
         <div className={styles.keywords_container}>
-          <Fade damping={0.5} direction="left" triggerOnce cascade>
+          <Fade direction="bottom" cascade={true} triggerOnce>
             <div className={styles.keyword}>
-              <FaHandshake size="3rem" color="#fff" />
-              <span>Bizalom</span>
+              <div className={styles.icon_container}>
+                <FaHandshake size="5rem" color="#fb5310" />
+              </div>
+              <h3>Bizalom</h3>
+              <div className={styles.decorator} />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                vero magnam sapiente explicabo, omnis, placeat ratione fuga
+                magni sit nisi perspiciatis tempora repellat, totam dolor
+                doloremque eaque molestias excepturi nobis?
+              </p>
             </div>
             <div className={styles.keyword}>
-              <BiBadgeCheck size="3rem" color="#fff" />
-              <span>Minőség</span>
+              <div className={styles.icon_container}>
+                <BiBadgeCheck size="5rem" color="#fb5310" />
+              </div>
+              <h3>Minőség</h3>
+              <div className={styles.decorator} />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                vero magnam sapiente explicabo, omnis, placeat ratione fuga
+                magni sit nisi perspiciatis tempora repellat, totam dolor
+                doloremque eaque molestias excepturi nobis?
+              </p>
             </div>
             <div className={styles.keyword}>
-              <TbTargetArrow size="3rem" color="#fff" />
-              <span>Precizitás</span>
+              <div className={styles.icon_container}>
+                <TbTargetArrow size="5rem" color="#fb5310" />
+              </div>
+              <h3>Precizitás</h3>
+              <div className={styles.decorator} />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                vero magnam sapiente explicabo, omnis, placeat ratione fuga
+                magni sit nisi perspiciatis tempora repellat, totam dolor
+                doloremque eaque molestias excepturi nobis?
+              </p>
             </div>
           </Fade>
         </div>
