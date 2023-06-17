@@ -16,11 +16,11 @@ const Navbar = () => {
     [styles.mobile_menu]: open,
   });
 
-  const [activeLink, setActiveLink] = useState('home');
+  const [activeLink, setActiveLink] = useState("home");
 
   const handleNavLinkClick = (link) => {
-    setActiveLink(link)
-  }
+    setActiveLink(link);
+  };
 
   return (
     <nav className={navStyles}>
@@ -31,31 +31,61 @@ const Navbar = () => {
         </div>
         <ul className={styles.nav_list}>
           <li>
-            <Link className={activeLink === 'home' ? styles.active : ''} onClick={() => handleNavLinkClick('home')} href="/">Fő oldal</Link>
+            <Link
+              className={activeLink === "home" ? styles.active : ""}
+              onClick={() => handleNavLinkClick("home")}
+              href="/"
+            >
+              Fő oldal
+            </Link>
           </li>
           <li>
             <div className={styles.divider}></div>
           </li>
           <li>
-            <Link className={activeLink === 'about' ? styles.active : ''} onClick={() => setActiveLink('about')} href="/about">Rólunk</Link>
+            <Link
+              className={activeLink === "about" ? styles.active : ""}
+              onClick={() => setActiveLink("about")}
+              href="/about"
+            >
+              Rólunk
+            </Link>
           </li>
           <li>
             <div className={styles.divider}></div>
           </li>
           <li>
-            <Link className={activeLink === 'prices' ? styles.active : ''} onClick={() => setActiveLink('prices')} href="/prices">Árlista</Link>
+            <Link
+              className={activeLink === "prices" ? styles.active : ""}
+              onClick={() => setActiveLink("prices")}
+              href="/prices"
+            >
+              Árlista
+            </Link>
           </li>
           <li>
             <div className={styles.divider}></div>
           </li>
           <li>
-            <Link className={activeLink === 'services' ? styles.active : ''} onClick={() => setActiveLink('services')} href="/services">Szolgáltatások</Link>
+            <Link
+              className={activeLink === "services" ? styles.active : ""}
+              onClick={() => setActiveLink("services")}
+              href="/services"
+            >
+              Szolgáltatások
+            </Link>
           </li>
           <li>
             <div className={styles.divider}></div>
           </li>
           <li>
-            <Link className={activeLink === 'gallery' ? styles.active : ''} onClick={() => setActiveLink('gallery')} href="/gallery">Galéria</Link>
+            <Link
+              className={activeLink === "gallery" ? styles.active : ""}
+              onClick={() => setActiveLink("gallery")}
+              href="/gallery"
+            >
+              Galéria
+            </Link>
           </li>
         </ul>
         {open ? (

@@ -1,11 +1,11 @@
-@use '../base';
+@use "../base";
 
 .main {
   padding-top: 50px;
 
   .header {
     @include base.centered();
-    background: url('/images/carbon_fiber.jpg');
+    background: url("/images/carbon_fiber1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -18,29 +18,26 @@
 
     .title {
       @include base.centered;
-      backdrop-filter: blur(8px);
+      backdrop-filter: blur(3px);
       padding: 30px 20px 50px 20px;
       width: 90%;
-      border-radius: 15px;
+      border-radius: 25px;
       text-align: center;
       border-top: 5px solid #d70b0b;
       border-left: 5px solid #d70b0b;
-      border-right: 5px solid base.$secondary-color2;
-      border-bottom: 5px solid base.$secondary-color2;
-     
+      box-shadow: 5px 5px 20px #3f3b3b;
 
       h1,
       h2 {
         color: #fff;
         font-family: base.$title_font;
       }
-  
+
       h1 {
         font-size: 4rem;
         background-image: linear-gradient(to right, #da0000, #e04018, #f37d39);
         background-clip: text;
         -webkit-text-fill-color: transparent;
-
 
         @include base.device(xs) {
           font-size: 2.5rem;
@@ -49,23 +46,23 @@
         @include base.device(tablet) {
           font-size: 3rem;
         }
-  
+
         @include base.device(desktop) {
           font-size: 4rem;
         }
       }
-  
+
       h2 {
         font-size: 2.8rem;
 
         @include base.device(xs) {
           font-size: 1.8rem;
         }
-  
+
         @include base.device(tablet) {
           font-size: 2.5rem;
         }
-  
+
         @include base.device(desktop) {
           font-size: 3rem;
         }
@@ -79,39 +76,38 @@
         margin-top: 15px;
         background: rgba(255, 255, 255, 1);
         border-radius: 15px;
-  
+
         @include base.device(desktop) {
           max-width: unset;
           width: 400px;
           height: 120px;
         }
-  
+
         .image {
           width: 100%;
           height: 50%;
           position: relative;
-  
+
           @include base.device(desktop) {
             width: 100%;
             height: 80%;
           }
-  
+
           img {
             object-fit: contain;
           }
         }
-    }   
-  }
+      }
+    }
 
     .button {
       background: #fff;
-      color: base.$secondary-color2;
+      color: #000;
       border: none;
-      border-radius: 20px;
+      border-radius: 25px;
       padding: 12px 15px;
       width: 150px;
       margin-top: 80px;
-      font-weight: 700;
       font-size: 1.2rem;
       text-decoration: none;
       text-align: center;
@@ -124,7 +120,7 @@
       &:hover {
         cursor: pointer;
         background: #000;
-        outline: 2px solid #fff;
+        outline: 1px solid #fff;
         color: #fff;
       }
     }
@@ -153,7 +149,12 @@
         gap: 10px;
         color: #fff;
         font-size: 1.4rem;
-        background: linear-gradient(320deg, rgb(122, 122, 122) 0%, rgb(65, 65, 65) 35%, rgb(2, 2, 2) 100%);
+        background: linear-gradient(
+          320deg,
+          rgb(122, 122, 122) 0%,
+          rgb(65, 65, 65) 35%,
+          rgb(2, 2, 2) 100%
+        );
         box-shadow: 12px 10px 20px #000000;
         border-radius: 15px;
         height: 180px;

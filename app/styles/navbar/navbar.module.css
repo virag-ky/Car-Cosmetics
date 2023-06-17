@@ -94,12 +94,7 @@
   border-radius: 5px;
   transition: 0.5s;
 }
-.navbar .nav_list li a:hover {
-  color: #000;
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-}
-.navbar .nav_list li a.active {
+.navbar .nav_list li a:hover, .navbar .nav_list li a.active {
   color: #000;
   text-decoration: underline;
   text-decoration-thickness: 3px;
