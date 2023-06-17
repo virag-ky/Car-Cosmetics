@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fugaz+One&family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Exo&display=swap');
 
 $primary-color: #797979;
 $secondary-color1: #f8f8f8;
 $secondary-color2: #4b4b4b;
 $title_font: 'Racing Sans One', cursive;
+$headings_font: 'Exo', sans-serif;
 
 @mixin centered($direction: column, $justify: center, $align: center) {
   display: flex;

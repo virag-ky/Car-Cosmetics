@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fugaz+One&family=Racing+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Exo&display=swap");
 .main {
   padding-top: 50px;
 }
@@ -148,6 +148,7 @@
   padding: 50px 0;
 }
 .main .intro_section h3 {
+  font-family: "Exo", sans-serif;
   font-size: 1.6rem;
   color: #4b4b4b;
   text-align: center;

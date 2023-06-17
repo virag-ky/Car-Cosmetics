@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fugaz+One&family=Racing+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Exo&display=swap");
 .navbar {
   display: flex;
   flex-direction: column;
@@ -89,14 +89,20 @@
 }
 .navbar .nav_list li a {
   text-decoration: none;
-  color: #4b4b4b;
+  color: #797979;
   padding: 5px 10px;
   border-radius: 5px;
   transition: 0.5s;
 }
 .navbar .nav_list li a:hover {
-  background: #4b4b4b;
-  color: #fff;
+  color: #000;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+.navbar .nav_list li a.active {
+  color: #000;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
 }
 .navbar .menu_button:hover {
   cursor: pointer;
